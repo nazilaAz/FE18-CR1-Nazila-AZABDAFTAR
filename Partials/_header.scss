@@ -1,15 +1,22 @@
+header{
+    margin-top: .5rem;
+    display: flex;
+    position: relative;
+}
 div.logo {
     p {
         margin: .2rem .5rem;
         font-weight: 700;
-        float: left;
     }
 }
 
 div.search {
-    margin: .2rem .5rem;
-    float: right;
-
+   /* margin: .2rem .5rem;*/
+    justify-content: flex-end;
+    position: absolute;
+    right: .8rem;
+    
+   
     #txtSearch {
         font-family: 'Dancing Script', cursive;
         text-align: right;

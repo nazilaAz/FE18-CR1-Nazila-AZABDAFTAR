@@ -17,11 +17,16 @@
         }
     }
 
+    .navtopLink{
+        @include alinkSize(.5rem);
+        @include alinkpadding(0,.4rem);
+    }
+
 }
 
 
 /* Mobile*/
-@media screen and (min-width: 319px) and (max-width: 480px) {
+@media screen and (min-width: 379px) and (max-width: 480px) {
     html {
         font-size: 16px;
     }
@@ -33,9 +38,14 @@
     .search {
         input[type="text"] {
             @include Textbox-W(12rem);
-            @include Textbox-H(3rem);
+            @include Textbox-H(2rem);
             background-color: $bc-mobile-body-color;
         }
+    }
+
+    .navtopLink{
+        @include alinkSize(.8rem);
+        @include alinkpadding(0,.2rem);
     }
 
 }
