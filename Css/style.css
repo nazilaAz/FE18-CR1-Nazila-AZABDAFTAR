@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+} /* Backgraounds Color in Tablet */
+/* Backgraounds Color in Mobile */
+/* Fonts size */
+div.logo p {
+  margin: 0.2rem 0.5rem;
+  font-weight: 700;
+  float: left;
+}
+
+div.search {
+  margin: 0.2rem 0.5rem;
+  float: right;
+}
+div.search #txtSearch {
+  font-family: "Dancing Script", cursive;
+  text-align: right;
+  font-weight: 700;
+  border: none;
+}
+
+body {
+  font-family: "Dancing Script", cursive;
+}
+
+/* Tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  html {
+    font-size: 24px;
+  }
+  body {
+    background-color: #eef5e4;
+  }
+  .search input[type=text] {
+    width: 10rem;
+    height: 1rem;
+    background-color: #eef5e4;
+  }
+}
+/* Mobile*/
+@media screen and (min-width: 319px) and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    background-color: #FFFDE3;
+  }
+  .search input[type=text] {
+    width: 12rem;
+    height: 3rem;
+    background-color: #FFFDE3;
+  }
+}/*# sourceMappingURL=style.css.map */

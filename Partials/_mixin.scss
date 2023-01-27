@@ -1,0 +1,7 @@
+@mixin Textbox-W($width){
+    width: $width ;
+}
+
+@mixin Textbox-H($height){
+    height: $height;
+}
