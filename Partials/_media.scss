@@ -1,3 +1,60 @@
+/*Desktop*/
+@media screen and (min-width: 769px) {
+    html {
+        font-size: 25px;
+    }
+
+    body {
+        background-color: $bc-body-color;
+    }
+
+
+    .search {
+        input[type="text"] {
+            @include Textbox-W(10rem);
+            @include Textbox-H(1rem);
+            background-color: $bc-body-color;
+            font-size: 1rem;
+        }
+    }
+
+    .navtopLink {
+        @include alinkSize(.8rem);
+        @include alinkpadding(0, 1.2rem);
+    }
+
+    .container {
+        margin: 0 auto;
+        font-size: .53rem;
+        font-weight: 300;
+        grid-template-columns: 30% 30% 30%;
+
+        @include changeRows(3, 1fr);
+        row-gap: 20px;
+    }
+
+    .imgContainer {
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        div {
+            top: -1.5rem;
+        }
+    }
+
+    footer {
+        font-size: .5rem;
+        background-color: $bc-footer-color;
+        line-height: 2;
+    }
+
+}
+
+
 /* Tablet*/
 @media screen and (min-width: 481px) and (max-width: 768px) {
     html {
@@ -14,6 +71,7 @@
             @include Textbox-W(10rem);
             @include Textbox-H(1rem);
             background-color: $bc-body-color;
+            font-size: 1rem;
         }
     }
 
@@ -25,8 +83,9 @@
     .container {
         font-size: .53rem;
         font-weight: 300;
-        grid-template-columns: 30% 30% 30%;
-        @include changeRows(3, 1fr);
+        // grid-template-columns: 30% 30% 30%;
+        grid-template-columns: auto auto;
+        // @include changeRows(3, 1fr);
         row-gap: 20px;
     }
 
