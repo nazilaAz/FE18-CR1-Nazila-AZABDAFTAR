@@ -6,11 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FE18-CR1-Nazila AZABDAFTAR</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="Css/style.css">
+=======
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+>>>>>>> cab31576e3592c749e3fa82a09830a5907a213bf
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto+Slab&display=swap" rel="stylesheet">
+<<<<<<< HEAD
+=======
+
+>>>>>>> cab31576e3592c749e3fa82a09830a5907a213bf
 </head>
 
 <body id="html">
@@ -37,6 +47,42 @@
             <li><a class="navtopLink" href="recipe.html" target="_blank">Recipe of the Month</a></li>
         </ul>
     </nav>
+    <!-- Swiper -->
+
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide ">
+                <img src="image/spaghetti-2931846_1280.jpg" />
+            </div>
+            <div class="swiper-slide ">
+                <img src="image/canape-2802_1280.jpg" />
+            </div>
+            <div class="swiper-slide ">
+                <img src="image/berries-2986532_1280.jpg" />
+            </div>
+            <div class="swiper-slide ">
+                <img src="image/pasta-1854245_1280.jpg" />
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide animate__animated animate__rollIn">
+                <img src="image/spaghetti-2931846_1280.jpg" />
+            </div>
+            <div class="swiper-slide animate__animated animate__rollIn">
+                <img src="image/canape-2802_1280.jpg" />
+            </div>
+            <div class="swiper-slide animate__animated animate__rollIn">
+                <img src="image/berries-2986532_1280.jpg" />
+            </div>
+            <div class="swiper-slide animate__animated animate__rollIn">
+                <img src="image/pasta-1854245_1280.jpg" />
+            </div>
+        </div>
+    </div>
     <main>
         <div class="container">
 
@@ -143,6 +189,26 @@
 
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+
 
 </body>
 
